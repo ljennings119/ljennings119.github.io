@@ -1,16 +1,50 @@
+* {
+box-sizing: border-box;
+margin: 0;
+}
+
 body {
-    background: orange; 
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-family: sans-serif;
 }
 
 header {
-    color: white
+background-color: #222E50;
+color: white;
+text-align: center;
+padding: 20px;
+}
+
+ul {
+    list-style-type: none;
 }
 
 nav {
-    padding: 1em;
-    margin: 1em
-    position: center;
-
-    
+float: left;
+background-color: #ECA72C ;
+text-align: center;
+width: 20%;
+height: 100%;
+height: 300px;
+padding: 20px;
 }
+
+article {
+background-color: #CDC6AE;
+float: left;
+width: 80%;
+height: 100%;
+padding: 20px;
+text-align: center;
+} 
+
+aside {
+    text-align: center;
+    background-color: #439A86 
+}
+
+footer {
+background: #007991;
+color: #eee;
+text-align: center;
+padding: 0.5em;
+font-size: 0.9em;}
