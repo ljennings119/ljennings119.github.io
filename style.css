@@ -1,0 +1,16 @@
+body {
+    background: orange; 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    color: white
+}
+
+nav {
+    padding: 1em;
+    margin: 1em
+    position: center;
+
+    
+}
