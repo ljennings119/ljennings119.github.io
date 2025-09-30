@@ -1,72 +1,125 @@
+/* Reset and base styles */
 * {
-box-sizing: border-box;
-margin: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-font-family: sans-serif;
+  font-family: sans-serif;
+  line-height: 1.6;
 }
 
 header {
-background-color: #222E50;
-color: white;
-text-align: center;
-padding: 20px;
+  background-color: #222E50;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+/* --- NAVIGATION --- */
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column; /* stack by default (for large screens sidebar look) */
+  gap: 10px;
+  padding: 0;
 }
 
+nav li {
+  margin: 10px 0;
+}
+
+nav img {
+  max-width: 150px;
+  height: auto; /* responsive images */
+}
+
+/* --- MAIN LAYOUT --- */
+section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+
+/* nav as sidebar on larger screens */
 nav {
-float: left;
-align-items: stretch;
-background-color: #ECA72C ;
-text-align: center;
-width: 20%;
-height: 400px;
-padding: 20px;
+  background-color: #ECA72C;
+  width: 20%;
+  padding: 20px;
+  display: center;
 }
 
+/* article beside nav */
 article {
-background-color: #CDC6AE;
-float: left;
-align-items: stretch;
-width: 80%;
-height: 400px;
-padding: 20px;
-text-align: center;
-text-wrap: pretty;
-} 
+  background-color: #CDC6AE;
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* figure and images inside article */
+figure img {
+  max-width: 300px;
+  height: auto;
+}
 
 aside {
-    text-align: center;
-    background-color: #439A86 
+  text-align: center;
+  background-color: #439A86;
+  padding: 20px;
 }
 
 footer {
-background: #007991;
-color: #eee;
-text-align: center;
-padding: 0.5em;
-font-size: 0.9em;
+  background: #007991;
+  color: #eee;
+  text-align: center;
+  padding: 0.5em;
+  font-size: 0.9em;
 }
 
-
-.emailBox {
-  padding-bottom: 20px;
-}
-
+/* form styling */
+.emailBox,
 .messageBox {
-  padding-bottom: 10px;
+  margin-bottom: 15px;
 }
 
-label {
-  line-height: 15px;
+input,
+textarea {
+  width: 100%; /* responsive inputs */
+  max-width: 500px;
+  padding: 8px;
+  margin-top: 5px;
 }
 
-label::after {
-  content: ":";
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 889px) {
+  /* Move nav under header */
+  nav {
+    display: center;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    background-color: #ECA72C; 
+    padding: 5px 25px;
+    
+  }
+  
+
+  nav ul {
+    flex-direction: row; /* inline menu for small screens */
+    justify-content: center;
+    gap: 30px;
+  }
+
+  section {
+    display: block; /* stack article full-width */
+  }
+
+  article {
+    width: 100%;
+  }
 }
+
+

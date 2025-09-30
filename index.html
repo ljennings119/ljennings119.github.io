@@ -1,62 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Elements</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Elements</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <header> 
-    <h1>Welcome to my page!</h1> 
+  <h1>Welcome to my page!</h1> 
 </header>
- 
-<section>
-    <nav>
-        <ul>
-            <li><a href="https://github.com/ljennings119/ljennings119.github.io.git" target="_blank"><img src="GitHub_logo.webp" alt="GitHub Logo" width="150em"></a></li>
-            <li><a href="https://linkedin.com/in/lauren-jennings-1507371a5/" target="_blank"><img href="https://logos-world.net/wp-content/uploads/2020/05/Linkedin-Logo.png" data-featherlight="image"><img fetchpriority="high" decoding="async" class="aligncenter wp-image-53962 size-large" src="https://logos-world.net/wp-content/uploads/2020/05/Linkedin-Logo-700x394.png" alt="Linkedin Logo" width="150em"></a></li>
-        </ul>
-    </nav>
 
-    <article>
-        <img src="Professional_pic_transparent_background.png" alt="Picture of Lauren" width="150em"/><br>
-        <figcation><b>"Software Engineer in the making"</b></figcaption><br>
-         <p>Feel free to explore my work on github and connect with me through LinkedIn.</p>
-    </article>
+<section>
+<nav>
+    <ul>
+      <li>
+        <a href="https://github.com/ljennings119/ljennings119.github.io.git" target="_blank">
+          <img src="GitHub_logo.webp" alt="GitHub Logo" />
+        </a>
+      </li>
+      <li>
+        <a href="https://linkedin.com/in/lauren-jennings-1507371a5/" target="_blank">
+          <img src="https://logos-world.net/wp-content/uploads/2020/05/Linkedin-Logo-700x394.png" 
+               alt="Linkedin Logo" />
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <article>
+    <figure>
+      <img src="Professional_pic_transparent_background.png" alt="Picture of Lauren" />
+      <figcaption><b>"Software Engineer in the making"</b></figcaption>
+    </figure>
+    <p>Feel free to explore my work on GitHub and connect with me through LinkedIn.</p>
+  </article>
 </section>
 
 <aside>
-    <h2>Message me on LinkedIn!</h2><br>
-    <form>
-  <div class="emailBox">
-    <label for="emailAddress">Your email address</label><br />
-    <input
-      id="emailAddress"
-      type="email"
-      size="50"
-      maxlength="64"
-      required
-      placeholder=""/>
-  </div>
+  <h2>Message me on LinkedIn!</h2><br>
+  <form>
+    <div class="emailBox">
+      <label for="emailAddress">Your email address</label><br />
+      <input
+        id="emailAddress"
+        type="email"
+        maxlength="64"
+        required
+        placeholder=""/>
+    </div>
 
-  <div class="messageBox">
-    <label for="message">Message</label><br />
-    <textarea
-      id="message"
-      cols="50"
-      rows="5"
-      required
-      placeholder="Let's chat!"></textarea>
-  </div>
-  <input type="submit" value="Send Message" />
-</form>
-    <p><em>Please Note:</em> the email portion is temporarily disabled.</p>
+    <div class="messageBox">
+      <label for="message">Message</label><br />
+      <textarea
+        id="message"
+        rows="5"
+        required
+        placeholder="Let's chat!"></textarea>
+    </div>
+    <input type="submit" value="Send Message" />
+  </form>
+  <p><em>Please Note:</em> the email portion is temporarily disabled.</p>
 </aside>
 
 <footer>est. 2025</footer>
 
 </body>
-
 </html>
